@@ -49,14 +49,9 @@
 .home-outer{
     width: 100%;
     height: 100%;
-    border: 1px solid blue;
-    background-color: #3B383F;
+    // border: 1px solid blue;
+    background-color: $bac1-color;
     // @include flex-display;
-}
-
-.home-container{
-    @include flex-display;
-    border: 1px solid black;
 }
 
 .row{
@@ -67,10 +62,11 @@
     @include flex-display;
 }
 
-.home-container-inner{
-    border: 1px solid red;
+.home-inner{
+    // border: 1px solid red;
     // height: 100%;
     @include flex-display;
+    padding-bottom: 5%;
 }
 
 .inner-1{
@@ -80,7 +76,6 @@
 .inner-2{
     @include flex-display;
     flex-direction: column;
-    color: $white-color;
     height: 100%;
     align-items: flex-start;
     // border: 1px solid green;
@@ -88,12 +83,15 @@
 
 .right-middle h2{
     font-size: 40px;
+    color: $aqu-color;
+    font-weight: 600;
 }
 
 .right-middle h1{
     font-size: 60px;
+    font-weight: 600;
     span{
-        color: $black-color;
+        color: $white-color;
     }
 }
 
@@ -110,11 +108,12 @@
 
 
 .right-bottom{
+    margin-top: 5%;
     width: 30%;
     height: 8%;
-    background-color: black;
+    background-color: $hover-color;
     border-radius: 10px;
-    padding-top: 2%;
+    padding-top: 1.5%;
 
     a{
         text-decoration: none;
@@ -123,7 +122,11 @@
     }
 
     &:hover{
-        background-color: $hover-color;
+        background-color: $black-color;
+        
+        h4{
+            color: $aqu-color !important;
+        }
     }
 }
 
