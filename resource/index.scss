@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import 'variable';
+
+*{
+    font-family: "Hind Siliguri", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    //  header area
+
+.header-outer{
+    position: sticky;
+    top: 0;
+}
+
+.bg-body-tertiary{
+    height: 30% !important;
+    background-color: $header-color !important;
+    font-weight: 700;
+    font-size: 20px;
+    // border: 1px solid black;
+}
+
+.bg-body-tertiary a{
+    color: $hover-color !important;
+    padding-left: 30px !important;
+
+    &:hover{
+        cursor: pointer;
+        color: $black-color !important;
+    }
+}
+
+.navbar-toggler{
+    background-color: $white-color !important;
+}
+
+    //  header area
+
+    //  home area
+
+.home-outer{
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    background-color: #3B383F;
+    // @include flex-display;
+}
+
+.home-container{
+    @include flex-display;
+    border: 1px solid black;
+}
+
+.row{
+    height: 100%;
+}
+
+.row-home{
+    @include flex-display;
+}
+
+.home-container-inner{
+    border: 1px solid red;
+    // height: 100%;
+    @include flex-display;
+}
+
+.inner-1{
+    background-size: cover;
+}
+
+.inner-2{
+    @include flex-display;
+    flex-direction: column;
+    color: $white-color;
+    height: 100%;
+    align-items: flex-start;
+    // border: 1px solid green;
+}
+
+.right-middle h2{
+    font-size: 40px;
+}
+
+.right-middle h1{
+    font-size: 60px;
+    span{
+        color: $black-color;
+    }
+}
+
+.right-top{
+    width: 25%;
+    height: 7px;
+    background-color: $hover-color;
+}
+
+.right-middle{
+    margin-top: 5%;
+}
+
+
+
+.right-bottom{
+    width: 30%;
+    height: 8%;
+    background-color: black;
+    border-radius: 10px;
+    padding-top: 2%;
+
+    a{
+        text-decoration: none;
+        color: $white-color;
+        text-align: center;
+    }
+
+    &:hover{
+        background-color: $hover-color;
+    }
+}
+
+
+
+
+
+// @media screen and (max-width: 768px) {
+//     .man img {
+//         width: 100%; /* Adjust as needed */
+//         margin-right: 0;
+//     }
+
+//     .right-middle h1 {
+//         font-size: 50px; /* Adjust as needed */
+        
+//         text-align: center; /* Center align for smaller screens */
+//     }
+// }
+
+
+
+    //  home area
