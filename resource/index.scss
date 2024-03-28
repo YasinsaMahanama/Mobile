@@ -73,6 +73,11 @@
     background-size: cover;
 }
 
+.inner-1 img{
+    margin-right: 15%;
+    margin-top: 13%;
+}
+
 .inner-2{
     @include flex-display;
     flex-direction: column;
