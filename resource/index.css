@@ -51,15 +51,26 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5%;
+  overflow: hidden;
 }
 
 .inner-1 {
   background-size: cover;
+  animation-name: man;
+  animation-duration: 2s;
 }
 
+@keyframes man {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .inner-1 img {
   margin-right: 15%;
-  margin-top: 13%;
+  margin-top: 8%;
 }
 
 .inner-2 {
@@ -69,8 +80,18 @@
   flex-direction: column;
   height: 100%;
   align-items: flex-start;
+  animation-name: text;
+  animation-duration: 2s;
 }
 
+@keyframes text {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .right-middle h2 {
   font-size: 50px;
   color: aquamarine;
@@ -96,8 +117,8 @@
 }
 
 .right-bottom {
-  margin-top: 5%;
-  width: 30%;
+  margin-top: 10%;
+  width: 40%;
   height: 8%;
   background-color: #0A4875;
   border-radius: 10px;
@@ -113,4 +134,7 @@
 }
 .right-bottom:hover h4 {
   color: aquamarine !important;
+}
+.right-bottom:hover:hover {
+  scale: 1.1;
 }/*# sourceMappingURL=index.css.map */
