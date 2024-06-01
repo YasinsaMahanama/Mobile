@@ -18,32 +18,33 @@
 .header-outer{
     position: sticky;
     top: 0;
-}
 
-.bg-body-tertiary{
-    height: 30% !important;
-    background-color: $header-color !important;
-    font-weight: 700;
-    font-size: 20px;
-    // border: 1px solid black;
-}
+    .bg-body-tertiary{
+        height: 30% !important;
+        background-color: $header-color !important;
+        font-weight: 700;
+        font-size: 20px;
+        // border: 1px solid black;
 
-.bg-body-tertiary a{
-    color: $white-color !important;
-    padding-left: 30px !important;
+        .navbar-toggler{
+            background-color: $white-color !important;
+        }
 
-    &:hover{
-        cursor: pointer;
-        color: $aqu-color !important;
+        a{
+            color: $white-color !important;
+            padding-left: 30px !important;
+        
+            &:hover{
+                cursor: pointer;
+                color: $aqu-color !important;
+            }
+        }
     }
-}
-
-.navbar-toggler{
-    background-color: $white-color !important;
 }
 
     //  header area
 
+    
     //  home area
 
 .home-outer{

@@ -9,25 +9,22 @@
   position: sticky;
   top: 0;
 }
-
-.bg-body-tertiary {
+.header-outer .bg-body-tertiary {
   height: 30% !important;
   background-color: #2D2933 !important;
   font-weight: 700;
   font-size: 20px;
 }
-
-.bg-body-tertiary a {
+.header-outer .bg-body-tertiary .navbar-toggler {
+  background-color: #f5f6fa !important;
+}
+.header-outer .bg-body-tertiary a {
   color: #f5f6fa !important;
   padding-left: 30px !important;
 }
-.bg-body-tertiary a:hover {
+.header-outer .bg-body-tertiary a:hover {
   cursor: pointer;
   color: aquamarine !important;
-}
-
-.navbar-toggler {
-  background-color: #f5f6fa !important;
 }
 
 .home-outer {
