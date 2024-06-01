@@ -149,4 +149,78 @@
 }
 .right-bottom:hover:hover {
   scale: 1.1;
+}
+
+.experience-outer {
+  width: 100%;
+  height: 100%;
+  background-color: #59555E;
+}
+.experience-outer .experience-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.experience-outer .experience-container .experience-inner {
+  width: 70%;
+  height: 100%;
+}
+.experience-outer .experience-container .experience-inner h1 {
+  font-weight: 700;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+  animation-name: man;
+  animation-duration: 2s;
+}
+.experience-outer .experience-container .experience-inner p {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.experience-outer .experience-container .experience-inner .inner-hr {
+  border: none;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  color: #ffffff;
+  margin-top: 7%;
+  animation-name: text;
+  animation-duration: 2s;
+}
+.experience-outer .experience-container .experience-inner .inner1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.experience-outer .experience-container .experience-inner .inner1 .box1 {
+  height: 100%;
+  width: 40%;
+  margin-top: 0;
+}
+.experience-outer .experience-container .experience-inner .inner1 .box1 h5 {
+  color: white;
+  font-weight: 500;
+}
+.experience-outer .experience-container .experience-inner .inner1 .box2 {
+  height: 100%;
+  width: 60%;
+  animation-name: text;
+  animation-duration: 2s;
+}
+.experience-outer .experience-container .experience-inner .inner1 .box2 h4 {
+  color: #F7914D;
+  font-weight: 700;
+}
+.experience-outer .experience-container .experience-inner .inner1 .box2 h5 {
+  margin-top: 5%;
+  color: white;
+  font-weight: 500;
+  line-height: 125%;
 }/*# sourceMappingURL=index.css.map */
