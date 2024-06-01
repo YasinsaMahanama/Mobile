@@ -167,12 +167,13 @@
 }
 .experience-outer .experience-container .experience-inner h1 {
   font-weight: 700;
-  font-size: 80px;
+  font-size: 380%;
   color: white;
   text-align: center;
   margin-bottom: 3%;
   animation-name: man;
   animation-duration: 2s;
+  margin-top: 4%;
 }
 .experience-outer .experience-container .experience-inner p {
   font-weight: 700;
