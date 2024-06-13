@@ -243,64 +243,81 @@
 
 .portfolio-outer {
   width: 100%;
-  height: 100%;
+  padding: 0;
   background-color: #2D2933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .portfolio-outer .portfolio-container {
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2%;
+  margin: 0;
 }
-.portfolio-outer .portfolio-container .portfolio-inner {
-  width: 90%;
-  height: 100%;
-}
-.portfolio-outer .portfolio-container .portfolio-inner h1 {
-  font-weight: 700;
-  font-size: 380%;
+.portfolio-outer .portfolio-container .portfolio-header {
   color: white;
   text-align: center;
   margin-bottom: 3%;
-  animation-name: man;
-  animation-duration: 2s;
-  margin-top: 4%;
 }
-.portfolio-outer .portfolio-container .portfolio-inner .inner {
-  border: 1px solid blue;
-  width: 100%;
-  height: 80%;
-}
-.portfolio-outer .portfolio-container .portfolio-inner .inner .inner1 {
-  border: 1px solid yellow;
-  width: 100%;
-  height: 50%;
-  align-items: center;
-  justify-content: center;
+.portfolio-outer .portfolio-container .row {
   display: flex;
-}
-.portfolio-outer .portfolio-container .portfolio-inner .inner .inner1 .box {
-  border: 1px solid red;
-  width: 30%;
-  height: 100%;
-}
-.portfolio-outer .portfolio-container .portfolio-inner .inner .inner1 .box .image {
-  width: 100%;
-  height: 40%;
-}
-.portfolio-outer .portfolio-container .portfolio-inner .inner .inner2 {
-  border: 1px solid yellow;
-  width: 100%;
-  height: 50%;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  display: flex;
-}
-.portfolio-outer .portfolio-container .portfolio-inner .inner .inner2 .box {
-  border: 1px solid red;
-  width: 30%;
-  height: 100%;
-}
-.portfolio-outer .portfolio-container .portfolio-inner .inner .inner2 .box .image {
+  align-items: center;
   width: 100%;
-  height: 80%;
+  max-width: 180%;
+}
+.portfolio-outer .portfolio-container .portfolio-body {
+  width: 100%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-outer .portfolio-container .portfolio-body .box {
+  width: 100%;
+  max-width: 230%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 5%;
+}
+.portfolio-outer .portfolio-container .portfolio-body .box img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+.portfolio-outer .portfolio-container .portfolio-body .box h3 {
+  color: white;
+}
+
+@media (max-width: 575px) {
+  .portfolio-outer .row .portfolio-body {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .portfolio-outer .row .portfolio-body {
+    width: 48%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio-outer .row .portfolio-body {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio-outer .row .portfolio-body {
+    width: 22%;
+  }
 }/*# sourceMappingURL=index.css.map */
