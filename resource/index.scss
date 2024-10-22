@@ -1,430 +1,437 @@
 @import url('https://fonts.googleapis.com/css2?family=Federo&family=Madimi+One&display=swap');
 @import 'variable';
 
-*{
-    font-family: "Federo", sans-serif;
-    margin: 0;
-    padding: 0;
+// General styles
+* {
+  font-family: "Federo", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@mixin flex-display{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// Mixin for flexbox display
+@mixin flex-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-    //  header area
+// Header area styles
+.header-outer {
+  position: sticky;
+  top: 0;
 
-.header-outer{
-    position: sticky;
-    top: 0;
-
-    .bg-body-tertiary{
-        height: 30% !important;
-        background-color: $header-color !important;
-        font-weight: 700;
-        font-size: 20px;
-        // border: 1px solid black;
-
-        .navbar-toggler{
-            background-color: $white-color !important;
-        }
-
-        a{
-            color: $white-color !important;
-            padding-left: 30px !important;
-        
-            &:hover{
-                cursor: pointer;
-                color: $aqu-color !important;
-            }
-        }
-    }
-}
-
-    //  header area
-
-    
-    //  home area
-
-.home-outer{
-    width: 100%;
-    height: 100%;
-    // border: 1px solid blue;
-    background-color: #3B383F;
-    // @include flex-display;
-}
-
-.row{
-    height: 100%;
-}
-
-.row-home{
-    @include flex-display;
-}
-
-.home-inner{
-    // border: 1px solid red;
-    // height: 100%;
-    @include flex-display;
-    padding-bottom: 5%;
-    overflow: hidden;
-}
-
-.inner-1{
-    background-size: cover;
-    animation-name: man;
-    animation-duration: 2s;
-}
-
-@keyframes man{
-    0%{
-        transform: translateX(-200px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-.inner-1 img{
-    margin-right: 15%;
-    margin-top: 8%;
-}
-
-.inner-2{
-    @include flex-display;
-    flex-direction: column;
-    height: 100%;
-    align-items: flex-start;
-    // border: 1px solid green;
-    animation-name: text;
-    animation-duration: 2s;
-}
-@keyframes text{
-    0%{
-        transform: translateX(50px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-.right-middle h2{
-    font-size: 50px;
-    color: $aqu-color;
-    font-weight: 600;
-}
-
-.right-middle h1{
-    font-size: 70px;
-    font-weight: 600;
-    span{
-        color: $white-color;
-    }
-}
-.right-middle p{
-    margin-top: 5%;
-    color: white;
-    text-align: left;
+  .bg-body-tertiary {
+    height: 30% !important;
+    background-color: $header-color !important;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 180%;
-    white-space: 2%;
 
-    a{
-        color: white;
+    .navbar-toggler {
+      background-color: $white-color !important;
     }
+
+    a {
+      color: $white-color !important;
+      padding-left: 30px !important;
+
+      &:hover {
+        cursor: pointer;
+        color: $aqu-color !important;
+      }
+    }
+  }
 }
 
-.right-top{
-    width: 25%;
-    height: 7px;
-    background-color: $hover-color;
+// Home area styles
+.home-outer {
+  width: 100%;
+  height: 100%;
+  background-color: #3B383F;
 }
 
-.right-middle{
-    margin-top: 5%;
+.row {
+  height: 100%;
 }
 
+.row-home {
+  @include flex-display;
+}
 
+.home-inner {
+  @include flex-display;
+  padding-bottom: 5%;
+  overflow: hidden;
+}
 
-.right-bottom{
-    margin-top: 10%;
-    width: 40%;
-    height: 8%;
-    background-color: $hover-color;
-    border-radius: 10px;
-    padding: 2.5% 2% 1.5% 2%;
-    a{
-        text-decoration: none;
+.inner-1 {
+  background-size: cover;
+  animation-name: man;
+  animation-duration: 2s;
+}
+
+@keyframes man {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.inner-1 img {
+  margin-right: 15%;
+  margin-top: 8%;
+}
+
+.inner-2 {
+  @include flex-display;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  animation-name: text;
+  animation-duration: 2s;
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.right-middle h2 {
+  font-size: 50px;
+  color: $aqu-color;
+  font-weight: 600;
+}
+
+.right-middle h1 {
+  font-size: 70px;
+  font-weight: 600;
+
+  span {
+    color: $white-color;
+  }
+}
+
+.right-middle p {
+  margin-top: 5%;
+  color: $white-color;
+  text-align: left;
+  font-size: 20px;
+  line-height: 180%;
+
+  a {
+    color: $white-color;
+  }
+}
+
+.right-top {
+  width: 25%;
+  height: 7px;
+  background-color: $hover-color;
+}
+
+.right-middle {
+  margin-top: 5%;
+}
+
+.right-bottom {
+  margin-top: 10%;
+  width: 40%;
+  height: 8%;
+  background-color: $hover-color;
+  border-radius: 10px;
+  padding: 2.5% 2% 1.5% 2%;
+
+  a {
+    text-decoration: none;
+    color: $white-color;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: $black-color;
+
+    h4 {
+      color: $aqu-color !important;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+// About Me Section
+.about-outer {
+  width: 100%;
+  background-color: #3B383F;
+  padding: 50px 0;
+}
+
+.about-container {
+  text-align: center;
+  color: $white-color;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: $aqu-color;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+// Skills Section
+.skills-outer {
+  width: 100%;
+  background-color: #59555E;
+  padding: 50px 0;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $aqu-color;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $white-color;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+// Experience area styles
+.experience-outer {
+  width: 100%;
+  height: 100%;
+  background-color: #59555E;
+
+  .experience-container {
+    @include flex-display;
+
+    .experience-inner {
+      width: 70%;
+      height: 100%;
+
+      h1 {
+        font-weight: 700;
+        font-size: 380%;
         color: $white-color;
         text-align: center;
-    }
+        margin-bottom: 3%;
+        animation-name: man;
+        animation-duration: 2s;
+        margin-top: 4%;
+      }
 
-    &:hover{
-        background-color: $black-color;
-        
-        h4{
-            color: $aqu-color !important;
+      p {
+        font-weight: 700;
+        font-size: 20px;
+        color: $white-color;
+        text-align: center;
+        font-style: italic;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        line-height: 25px;
+      }
+
+      .inner-hr {
+        border: none;
+        height: 3px;
+        background-color: $white-color;
+        margin: 20px 0;
+        animation-name: text;
+        animation-duration: 2s;
+      }
+
+      .experience-details {
+        margin-top: 20px;
+
+        h4 {
+          color: #F7914D;
+          font-weight: 700;
+          margin-bottom: 10px;
         }
-        
-        &:hover{
-            scale: 1.1;
+
+        h5 {
+          color: $white-color;
+          margin-top: 5%;
+          font-weight: 500;
+          line-height: 125%;
         }
+
+        p {
+          color: $white-color;
+          font-weight: 400;
+        }
+      }
     }
+  }
 }
 
+// Portfolio area styles
+.portfolio-outer {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #2D2933;
+  @include flex-display;
+  flex-direction: column;
 
-
-
-
-// @media screen and (max-width: 768px) {
-//     .man img {
-//         width: 100%; /* Adjust as needed */
-//         margin-right: 0;
-//     }
-
-//     .right-middle h1 {
-//         font-size: 50px; /* Adjust as needed */
-        
-//         text-align: center; /* Center align for smaller screens */
-//     }
-// }
-
-
-
-    //  home area
-
-    // experience area
-
-.experience-outer{
+  .portfolio-container {
+    @include flex-display;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    background-color: #59555E;
+    padding: 0 2%;
+    margin: 0;
 
-    .experience-container{
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    
-        .experience-inner{
-            width: 70%;
-            height: 100%;
-            // border: 1px solid red;
-        
-            h1{
-                font-weight: 700;
-                font-size: 380%;
-                color: white;
-                text-align: center;
-                margin-bottom: 3%;
-                animation-name: man;
-                animation-duration: 2s;
-                margin-top: 4%;           
-            }
-        
-            p{
-                font-weight: 700;
-                font-size: 20px;
-                color: white;
-                text-align: center;
-                font-style: italic;
-                word-spacing: 3px;
-                letter-spacing: 1px;
-                line-height: 25px;
-            }
-        
-            .inner-hr{
-                border: none;
-                height: 3px; 
-                background-color: #ffffff;
-                margin: 20px 0;
-                color: #ffffff;
-                margin-top: 7%;
-                animation-name: text;
-                animation-duration: 2s;
-            }
-
-            .inner1{
-                align-items: center;
-                justify-content: center;
-                display: flex;
-
-                .box1{
-                    // border: 1px solid blue;
-                    height: 100%;
-                    width: 40%;
-                    margin-top: 0;
-                    
-                    h5{
-                        color: white;
-                        font-weight: 500;
-                    }
-                }
-
-                .box2{
-                    // border: 1px solid blue;
-                    height: 100%;
-                    width: 60%;
-                    animation-name: text;
-                    animation-duration: 2s;
-
-                    h4{
-                        color: #F7914D;
-                        font-weight: 700;
-                    }
-
-                    h5{
-                        margin-top: 5%;
-                        color: white;
-                        font-weight: 500;
-                        line-height: 125%;
-                    }
-                }
-            }
-
-            .contact-button{
-                margin-top: 7%;
-                margin-left: 30%;
-                margin-bottom: 5%;
-                width: 40%;
-                height: 8%;
-                background-color: #0A4875;
-                border-radius: 10px;
-                padding: 2.5% 2% 1.5% 2%;
-
-
-                a {
-                    text-decoration: none;
-                    color: #f5f6fa;
-                    text-align: center;
-                }
-            }
-            
-            .contact-button:hover {
-                background-color: black;
-            }
-
-
-        }
+    .portfolio-header {
+      color: $white-color;
+      text-align: center;
+      margin-bottom: 3%;
     }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 180%;
+    }
+
+    .portfolio-body {
+      width: 100%;
+      margin-bottom: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .box {
+        width: 100%;
+        max-width: 230%;
+        @include flex-display;
+        flex-direction: column;
+        text-align: center;
+        margin: 5%;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 350px;
+          object-fit: cover;
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          color: $white-color;
+        }
+      }
+    }
+  }
 }
 
-    //experience area
+// Contact Me Section
+.contact-outer {
+  width: 100%;
+  background-color: #3B383F;
+  padding: 50px 0;
 
+  .contact-container {
+    text-align: center;
+    color: $white-color;
 
-    //portfolio area
-    .portfolio-outer {
-        width: 100%;
-        padding: 0;
-        background-color: #2D2933;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      
-        .portfolio-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            padding: 0 2%;
-            margin: 0;
-      
-          .portfolio-header {
-                color: white;
-                text-align: center;
-                margin-bottom: 3%;
-          }
-      
-          .row {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                max-width: 180%;
-          }
-      
-          .portfolio-body {
-                width: 100%;
-                margin-bottom: 2%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-      
-            .box {
-                width: 100%;
-                max-width: 230%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                // border: 1px solid yellow;
-                padding: 0;
-                margin: 5%;
-      
-              img {
-                width: 100%;
-                height: auto;
-                max-height: 350px;
-                object-fit: cover;
-                margin-bottom: 10px;
-              }
-      
-              h3 {
-                color: white;
-              }
-            }
-          }
-        }
-      }
-      
-      // Media Queries
-      
-      // Smartphones
-      @media (max-width: 575px) {
-        .portfolio-outer {
-          .row {
-            .portfolio-body {
-              width: 100%; // 1 column on smartphones
-            }
-          }
-        }
-      }
-      
-      // Tablets
-      @media (min-width: 576px) and (max-width: 767px) {
-        .portfolio-outer {
-          .row {
-            .portfolio-body {
-              width: 48%; // 2 columns on tablets
-            }
-          }
-        }
-      }
-      
-      // Small Desktops
-      @media (min-width: 768px) and (max-width: 991px) {
-        .portfolio-outer {
-          .row {
-            .portfolio-body {
-              width: 30%; // 3 columns on small desktops
-            }
-          }
-        }
-      }
-      
-      // Large Desktops
-      @media (min-width: 992px) {
-        .portfolio-outer {
-          .row {
-            .portfolio-body {
-              width: 22%; // 4 columns on large desktops
-            }
-          }
-        }
-      }
-      
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: $aqu-color;
+    }
 
-   //portfolio area
+    ul {
+      list-style-type: none;
+      font-size: 1.2rem;
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $aqu-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      a {
+        color: $aqu-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+// Smartphones
+@media (max-width: 575px) {
+  .portfolio-outer {
+    .row {
+      .portfolio-body {
+        width: 100%; // 1 column on smartphones
+      }
+    }
+  }
+}
+
+// Tablets
+@media (min-width: 576px) and (max-width: 767px) {
+  .portfolio-outer {
+    .row {
+      .portfolio-body {
+        width: 48%; // 2 columns on tablets
+      }
+    }
+  }
+}
+
+// Small Desktops
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio-outer {
+    .row {
+      .portfolio-body {
+        width: 30%; // 3 columns on small desktops
+      }
+    }
+  }
+}
+
+// Large Desktops
+@media (min-width: 992px) {
+  .portfolio-outer {
+    .row {
+      .portfolio-body {
+        width: 22%; // 4 columns on large desktops
+      }
+    }
+  }
+}
